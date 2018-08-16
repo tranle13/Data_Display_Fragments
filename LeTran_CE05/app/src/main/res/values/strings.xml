@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">LeTran_CE05</string>
+    <string name="app_name">Data Display Fragments</string>
+    <string-array name="spinner_items">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Administrator</item>
+    </string-array>
+
+    <string name="refresh_button">Refresh</string>
 </resources>
