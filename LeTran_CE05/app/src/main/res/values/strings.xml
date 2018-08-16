@@ -7,4 +7,17 @@
     </string-array>
 
     <string name="refresh_button">Refresh</string>
+    <string name="student_title">Add a Student</string>
+    <string name="student_id_hint">Student ID</string>
+    <string name="instructor_title">Add an Instructor</string>
+    <string name="instructor_course_hint">Course</string>
+    <string name="admin_title">Add an Administrator</string>
+    <string name="admin_program_hint">Program</string>
+    <string name="student_button">Add student</string>
+    <string name="instructor_button">Add instructor</string>
+    <string name="admin_button">Add administrator</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="imageView">Image Holder</string>
+    <string name="empty_list">Add some data, mate!</string>
 </resources>
