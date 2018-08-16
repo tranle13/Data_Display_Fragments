@@ -20,4 +20,5 @@
     <string name="last_name_hint">Last Name</string>
     <string name="imageView">Image Holder</string>
     <string name="empty_list">Add some data, mate!</string>
+    <string name="rotate_prompt">Please rotate the device to landscape mode</string>
 </resources>
