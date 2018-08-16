@@ -5,12 +5,16 @@
 
 package com.sunny.android.letran_ce05;
 
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
+
+import com.sunny.android.letran_ce05.fragments.DataFragment;
+import com.sunny.android.letran_ce05.fragments.InstructorFragment;
 
 import java.util.ArrayList;
 
@@ -25,13 +29,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dropdown = (Spinner)findViewById(R.id.spn_Spinner);
-        if (dropdown == null) {
-            Log.i(TAG, "Spinner is null!");
-        }
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            dropdown = (Spinner) findViewById(R.id.spn_Spinner);
+            dropdown.setOnItemSelectedListener(spinnerTapped);
 
-//        getSupportFragmentManager().beginTransaction().add(R.id.personFragmentHolder,
-//                InstructorFragment.newInstance()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.personFragmentHolder,
+                    InstructorFragment.newInstance()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.listViewFragmentHolder,
+                    DataFragment.newInstance(dataCollection)).commit();
+        }
     }
 
     private Spinner.OnItemSelectedListener spinnerTapped = new Spinner.OnItemSelectedListener() {
