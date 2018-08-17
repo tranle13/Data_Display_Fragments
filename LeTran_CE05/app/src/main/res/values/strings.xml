@@ -2,7 +2,7 @@
     <string name="app_name">Data Display Fragments</string>
     <string-array name="spinner_items">
         <item>Student</item>
-        <item>Teacher</item>
+        <item>Instructor</item>
         <item>Administrator</item>
     </string-array>
 

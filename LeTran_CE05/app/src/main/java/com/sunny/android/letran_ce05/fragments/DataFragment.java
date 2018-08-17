@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class DataFragment extends ListFragment {
 
     private static final String ARG_DATALIST = "ARG_DATALIST";
+
     public DataFragment() {
         // Default empty constructor
     }
